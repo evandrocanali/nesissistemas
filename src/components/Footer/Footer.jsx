@@ -28,7 +28,6 @@ const Footer = () => {
           <Link to="/servicos">{t('footer.s1')}</Link>
           <Link to="/servicos">{t('footer.s2')}</Link>
           <Link to="/servicos">{t('footer.s3')}</Link>
-          <Link to="/servicos">{t('footer.s4')}</Link>
         </div>
 
         <div className="footer-links-group">
