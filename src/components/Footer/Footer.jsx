@@ -44,6 +44,7 @@ const Footer = () => {
           <p><MapPin size={16} className="contact-icon" /> Bauru, SP - Brasil</p>
           <p><Phone size={16} className="contact-icon" /> (14) 98827-0103</p>
           <p><Phone size={16} className="contact-icon" /> (14) 98112-0394</p>
+          <p><Phone size={16} className="contact-icon" /> (14) 98822-7682</p>
           <p><Mail size={16} className="contact-icon" /> contato@nresolutions.com.br</p>
         </div>
       </div>

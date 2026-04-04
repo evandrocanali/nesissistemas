@@ -40,6 +40,7 @@ const Contato = () => {
                 <h4>{t('contact.phones')}</h4>
                 <p className="text-muted">(14) 98827-0103</p>
                 <p className="text-muted">(14) 98112-0394</p>
+                <p className="text-muted">(14) 98822-7682</p>
               </div>
             </div>
 
