@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="container nav-container">
         <Link to="/" className="brand hover-glow">
           <Code className="brand-icon" />
-          <span className="brand-text text-gradient">NEsis</span>
+          <span className="brand-text text-gradient">NRE Solutions</span>
         </Link>
         
         <div className="desktop-menu">

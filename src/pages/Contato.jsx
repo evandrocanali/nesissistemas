@@ -47,7 +47,7 @@ const Contato = () => {
               <Mail className="text-primary" />
               <div>
                 <h4>{t('contact.email')}</h4>
-                <p className="text-muted">contato@nesis.com.br</p>
+                <p className="text-muted">contato@nresolutions.com.br</p>
               </div>
             </div>
           </div>

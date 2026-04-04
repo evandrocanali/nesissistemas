@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <h2 className="text-gradient">NEsis Tecnologia</h2>
+          <h2 className="text-gradient">NRE Solutions</h2>
           <p className="footer-desc text-muted">
             {t('footer.desc')}
           </p>
@@ -44,7 +44,7 @@ const Footer = () => {
           <p><MapPin size={16} className="contact-icon" /> Bauru, SP - Brasil</p>
           <p><Phone size={16} className="contact-icon" /> (14) 98827-0103</p>
           <p><Phone size={16} className="contact-icon" /> (14) 98112-0394</p>
-          <p><Mail size={16} className="contact-icon" /> contato@nesis.com.br</p>
+          <p><Mail size={16} className="contact-icon" /> contato@nresolutions.com.br</p>
         </div>
       </div>
       <div className="footer-bottom">
