@@ -7,7 +7,6 @@ import Portfolio from './pages/Portfolio';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
-import TrustPopup from './components/TrustPopup/TrustPopup';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
       </main>
       <Footer />
       <WhatsAppButton />
-      <TrustPopup />
     </div>
   );
 }

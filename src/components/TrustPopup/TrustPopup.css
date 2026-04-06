@@ -1,8 +1,16 @@
-.trust-popup {
+.trust-container {
   position: fixed;
   bottom: 2rem;
   left: 2rem;
   z-index: 999;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.trust-popup {
   background: white;
   border-radius: 20px;
   padding: 0.75rem 1.25rem;
@@ -10,7 +18,8 @@
   border: 1px solid #e0efff;
   display: flex;
   align-items: center;
-  max-width: 250px;
+  max-width: 280px;
+  pointer-events: auto;
 }
 
 .trust-content {
@@ -58,11 +67,17 @@
 }
 
 @media (max-width: 768px) {
-  .trust-popup {
+  .trust-container {
     bottom: 1.5rem;
     left: 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .trust-popup {
     padding: 0.6rem 1rem;
-    max-width: 200px;
+    max-width: 220px;
   }
   
   .trust-icon {
@@ -75,3 +90,4 @@
     font-size: 0.85rem;
   }
 }
+

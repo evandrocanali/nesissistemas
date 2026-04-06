@@ -71,9 +71,15 @@ const Home = () => {
           >
             <div className="hero-image-container">
                <img src={heroHuman} alt="Equipe NRE Solutions" className="hero-main-img" />
-               <div className="experience-badge animate-float">
-                  <span className="number">10+</span>
-                  <span className="label">Anos de Experiência</span>
+               <div className="hero-badges">
+                  <div className="hero-badge experience-badge animate-float">
+                     <span className="number">10+</span>
+                     <span className="label">Anos de Experiência</span>
+                  </div>
+                  <div className="hero-badge clients-badge animate-float delay-200">
+                     <span className="number">100+</span>
+                     <span className="label">Clientes Satisfeitos</span>
+                  </div>
                </div>
             </div>
           </motion.div>
