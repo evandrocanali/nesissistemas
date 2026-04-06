@@ -1,13 +1,13 @@
 :root {
-  /* Brand Colors - Sophisticated Neon/Cyberpunk inspired but professional */
-  --bg-dark: #050505;
-  --bg-card: rgba(20, 20, 25, 0.6);
-  --primary: #00f2fe;
-  --primary-hover: #4facfe;
-  --secondary: #667eea;
-  --accent: #f093fb;
-  --text-main: #f8f9fa;
-  --text-muted: #adb5bd;
+  /* Brand Colors - Humanized & Professional */
+  --bg-dark: #ffffff;
+  --bg-card: #f8faff;
+  --primary: #0066FF;
+  --primary-hover: #0052cc;
+  --secondary: #0044bb;
+  --accent: #0066FF;
+  --text-main: #0a0a0a;
+  --text-muted: #555555;
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -21,10 +21,10 @@
   --spacing-xl: 4rem;
   --spacing-xxl: 8rem;
 
-  /* Effects */
-  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  --blur-amount: blur(12px);
+  /* Effects - Softer & More Professional */
+  --glass-border: 1px solid rgba(0, 0, 0, 0.08);
+  --glass-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+  --blur-amount: blur(8px);
   --transition-fast: 0.2s ease-out;
   --transition-normal: 0.3s ease-out;
   --transition-slow: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -40,21 +40,21 @@ body {
   font-family: var(--font-sans);
   background-color: var(--bg-dark);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(0, 242, 254, 0.05) 0%, transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(102, 126, 234, 0.05) 0%, transparent 25%);
+    radial-gradient(circle at 10% 20%, rgba(0, 102, 255, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 102, 255, 0.03) 0%, transparent 20%);
   background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   margin-bottom: var(--spacing-md);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 a {

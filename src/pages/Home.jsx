@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Smartphone, Globe, ArrowRight, Zap } from 'lucide-react';
+import { Code2, Smartphone, Globe, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import FeatureCard from '../components/Card/FeatureCard';
+import heroHuman from '../assets/hero-human.png';
 import './Home.css';
 
 const Home = () => {
@@ -41,12 +42,12 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="badge animate-float">
-              <Zap size={14} className="text-accent" /> {t('home.badge')}
+            <div className="badge human-badge">
+              <span className="dot"></span> {t('home.badge')}
             </div>
             <h1 className="title-xl">
               {t('home.title1')} <br/>
-              <span className="text-gradient">{t('home.title2')}</span>
+              <span className="text-blue">{t('home.title2')}</span>
             </h1>
             <p className="subtitle hero-subtitle">
               {t('home.subtitle')}
@@ -61,24 +62,19 @@ const Home = () => {
             </div>
           </motion.div>
           
-          {/* Hero Visual 3D Illusion */}
+          {/* Hero Visual - Human Centric */}
           <motion.div 
-            className="hero-visual"
-            initial={{ opacity: 0, scale: 0.8 }}
+            className="hero-visual-wrapper"
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="visual-core hover-glow">
-               <div className="glass-panel floating-card card-1 animate-float delay-100">
-                  <Code2 size={40} className="text-primary" />
+            <div className="hero-image-container">
+               <img src={heroHuman} alt="Equipe NRE Solutions" className="hero-main-img" />
+               <div className="experience-badge animate-float">
+                  <span className="number">10+</span>
+                  <span className="label">Anos de Experiência</span>
                </div>
-               <div className="glass-panel floating-card card-2 animate-float delay-300">
-                  <Smartphone size={40} className="text-secondary" />
-               </div>
-               <div className="glass-panel floating-card card-3 animate-float delay-500">
-                  <Globe size={40} className="text-accent" />
-               </div>
-               <div className="glow-orb"></div>
             </div>
           </motion.div>
         </div>
@@ -94,7 +90,7 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="title-lg">{t('home.services_title')} <span className="text-gradient-alt">{t('home.services_title_hl')}</span></h2>
+            <h2 className="title-lg">{t('home.services_title')} <span className="text-blue-gradient">{t('home.services_title_hl')}</span></h2>
             <p className="subtitle">{t('home.services_sub')}</p>
           </motion.div>
           
@@ -117,14 +113,14 @@ const Home = () => {
       <section className="cta-section section">
         <div className="container">
           <motion.div 
-            className="glass-panel cta-panel"
+            className="cta-panel-humanized"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
             <h2>{t('home.cta_title')}</h2>
-            <p className="text-muted">{t('home.cta_sub')}</p>
+            <p className="cta-subtitle">{t('home.cta_sub')}</p>
             <Link to="/contato" className="btn btn-primary btn-lg hover-lift" style={{ marginTop: '2rem' }}>
               {t('home.cta_btn')} <ArrowRight size={18} />
             </Link>
